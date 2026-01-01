@@ -1,129 +1,104 @@
 
-# Todo Actix Web Server
+# Rust Web Programming Learning Project
 
-A simple REST API server built with Actix Web in Rust, following along with a tutorial series. This project demonstrates basic web server setup with JSON response handling.
+Welcome to my Rust web programming learning repository! This project contains my implementations and experiments while learning Rust web development.
 
-## 📋 Project Overview
+## 📚 About This Repository
 
-This is a learning project that creates a basic web server using the Actix Web framework. It currently provides a simple status endpoint that returns a JSON response indicating the server status.
+This repository documents my journey learning Rust web programming through hands-on projects and tutorials. Each project focuses on different aspects of building web applications with Rust.
 
-## 🚀 Features
+## 🏗️ Current Projects
 
-- Simple HTTP server running on port 8080
-- JSON serialization/deserialization with Serde
-- Status endpoint (`GET /`) that returns server status
-- Modular code structure with separate models module
+### 📋 Todo Actix Web Server
+A simple REST API server built with Actix Web framework.
 
-## 🛠️ Prerequisites
+**Status**: ✅ Complete (Basic Version)
 
-- Rust programming language (latest stable version recommended)
-- Cargo (Rust's package manager)
+**Features**:
+- Basic HTTP server setup
+- JSON serialization with Serde
+- Status endpoint
+- Modular code structure
 
-## 📦 Dependencies
-
-- **actix-web**: Web framework for Rust
-- **actix-rt**: Runtime for Actix Web
-- **serde**: Serialization/deserialization framework
-- **serde_json**: JSON serialization/deserialization
-
-## 🏃‍♂️ Getting Started
-
-### Installation
-
-1. Clone or download this project
-2. Navigate to the project directory
-3. Build the project:
-   ```bash
-   cargo build
-   ```
-
-### Running the Server
-
-Start the development server:
+**Quick Start**:
 ```bash
+cd todo-actix
 cargo run
 ```
 
-The server will start at `http://127.0.0.1:8080`
+**Full Documentation**: [See detailed README](./todo-actix/README.md)
 
-### Testing the API
+## 🎯 Learning Path
 
-Once the server is running, you can test the status endpoint:
+I'm following along with the YouTube tutorial series:
+- **Series**: Rust Web Programming
+- **Playlist**: [Watch on YouTube](https://www.youtube.com/watch?v=gQwA0g0NNSI&list=PLECOtlti4Psr4hXVX5GuSvLKp0-RZjz93)
 
-```bash
-curl http://127.0.0.1:8080/
+## 🚀 Getting Started
+
+### Prerequisites
+- Rust (latest stable version)
+- Cargo package manager
+
+### Setup
+1. Clone this repository
+2. Navigate to the project you want to explore
+3. Follow the specific README instructions for each project
+
+## 📁 Repository Structure
+
+```
+rust-web-learning/
+├── todo-actix/              # Actix Web server project
+│   ├── src/
+│   ├── Cargo.toml
+│   └── README.md            # Project-specific documentation
+├── README.md               # This main documentation file
+└── (future projects will be added here)
 ```
 
-Expected response:
-```json
-{"status":"UP"}
-```
+## 🛠️ Technologies Used
 
-Or visit `http://127.0.0.1:8080/` in your web browser.
+- **Rust**: Systems programming language
+- **Actix Web**: Powerful web framework
+- **Serde**: Serialization/deserialization
+- **Cargo**: Rust's package manager and build system
 
-## 📁 Project Structure
+## 📖 Learning Goals
 
-```
-todo-actix/
-├── src/
-│   ├── main.rs          # Main application entry point
-│   └── models.rs        # Data models and struct definitions
-├── Cargo.toml           # Project dependencies and configuration
-└── README.md            # This file
-```
+Through these projects, I aim to master:
+- ✅ Basic web server setup in Rust
+- 🔲 Database integration
+- 🔲 REST API development
+- 🔲 Authentication and authorization
+- 🔲 Error handling
+- 🔲 Testing strategies
+- 🔲 Deployment practices
 
-### Code Overview
+## 📈 Progress Tracking
 
-#### main.rs
-- Sets up the Actix Web server
-- Defines the main application entry point
-- Configures routes (currently only the root route)
-- Handles server startup and binding
+| Project | Status | Key Learnings |
+|---------|--------|---------------|
+| Todo Actix Web Server | ✅ Complete | Basic server setup, JSON responses, routing |
 
-#### models.rs
-- Contains the `Status` struct with Serde derive macros
-- Enables JSON serialization/deserialization
+## 🤝 Contributing
 
-## 🔧 Development
+This is a personal learning repository, but I welcome:
+- Suggestions for improvement
+- Code review comments
+- Additional learning resources
+- Bug reports
 
-### Building for Release
+## 📝 Notes
 
-```bash
-cargo build --release
-```
+- Each project has its own detailed README with specific instructions
+- Code comments explain my learning process and decisions
+- I'm documenting challenges and solutions I encounter
 
-### Running Tests
+## 🔗 Useful Resources
 
-```bash
-cargo test
-```
+- [The Rust Programming Language Book](https://doc.rust-lang.org/book/)
+- [Actix Web Documentation](https://actix.rs/docs/)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-### Code Formatting
-
-```bash
-cargo fmt
-```
-
-### Linting
-
-```bash
-cargo clippy
-```
-
-## 📚 Learning Resources
-
-This project follows along with the YouTube tutorial series:
-- **Title**: Rust Web Programming
-- **Channel**: Referenced in your learning materials
-- **Video**: https://www.youtube.com/watch?v=gQwA0g0NNSI&list=PLECOtlti4Psr4hXVX5GuSvLKp0-RZjz93
-
-## 🚧 Next Steps
-
-As you continue with the tutorial series, you'll likely add:
-- Database integration
-- CRUD operations for todo items
-- More API endpoints
-- Error handling
-- Authentication
-- Frontend integration
 
